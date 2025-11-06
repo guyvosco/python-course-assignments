@@ -15,11 +15,11 @@ The **CLI** code *travel_expences.py* was written manually and runs in one of tw
 I used ChatGPT-5 to build the **GUI** version, using the following prompt:
 
 ```
-Following the atached script, write a new script for a GUI version.
-On top row: add input boxes for the title (str), amount (float), the currency (dropdown with the available currency codes) and a box with "+" to add the expense.
-In the middle: show a table of all the added expences with columns for the title, amount in the original currency and the amount in the converted currency.
+Following the attached script, write a new script for a GUI version.
+On the top row: add input boxes for the title (str), amount (float), the currency (dropdown with the available currency codes), and a box with "+" to add the expense.
+In the middle: show a table of all the added expenses with columns for the title, amount in the original currency, and the amount in the converted currency.
 Bottom row: add a box to sum up the expenses and print the results.
-Use similar logic and terminologies to the attached code.
+Use similar logic and terminology to the attached code.
 Use only Python standard libraries.
 ```
 
