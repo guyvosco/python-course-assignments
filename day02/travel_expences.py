@@ -1,7 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 '''
+A script to calculate travel expenses in various currencies and convert them to ILS (Israeli Shekel).
 
+Usage:
+1. Command-line arguments:
+   python travel_expences.py title1 amount1 currency1 title2 amount2 currency2 ...
+2. Interactive input.
 '''
 
 import sys

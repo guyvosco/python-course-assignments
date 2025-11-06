@@ -6,11 +6,11 @@ The code uses a free and open-access API (https://www.exchangerate-api.com/docs/
 The **CLI** code *travel_expences.py* was written manually and runs in one of two ways:
 - By passing system arguments in triplets:
   
-  `python travel_expences.py title1 amount1 currancy1 title2 amount2 currancy2 ...`
+  `python travel_expences.py title1 amount1 currency1 title2 amount2 currency2 ...`
 
   Example: `python travel_expences.py Texi 160 ILS Flight 4000 USD Lunch 22.5 CHF`
   
-- If no arguments are provided, it prompts you interactively to enter the triplets `title amount currancy` one by one (type `done` to finish).
+- If no arguments are provided, it prompts you interactively to enter the triplets `title amount currency` one by one (type `done` to finish).
   
 I used ChatGPT-5 to build the **GUI** version, using the following prompt:
 
