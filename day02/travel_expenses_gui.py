@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import urllib.request
 import json
-from travel_expences import exchange_rates
+from day02.travel_expenses import exchange_rates
 
 API_URL = 'https://open.er-api.com/v6/latest/USD'
 YOUR_CURRENCY = 'ILS'
