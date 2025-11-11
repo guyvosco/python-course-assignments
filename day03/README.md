@@ -9,7 +9,7 @@ All code was written manually.
 **No installs needed.**
 
 The code uses a free and open-access API (https://www.exchangerate-api.com/docs/free) to get the current (updated once per day) `rates`. 
-The **business logic** is implemented in the `exchange_rates` function (from the `utilities` module), which converts a given `amount` from `from_currency` to `to_currency` using a provided `rates` dictionary.
+The **business logic** is implemented in the `exchange_rates` function (from the `utilities` module), which converts a given `amount` from `from_currency` to `to_currency` (`ILS` by default) using a provided `rates` dictionary.
 
 You can run the code in two ways:
 
