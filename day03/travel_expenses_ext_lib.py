@@ -18,12 +18,14 @@ from currency_converter import CurrencyConverter
 def main():
     your_currency = 'ILS'
 
+    converter = CurrencyConverter()
+
     argv = sys.argv
     if len(argv) > 1:
         expenses = []
         for title, amount, currency in zip(argv[1::3], argv[2::3], argv[3::3]):
             try:
-                converted = CurrencyConverter().convert(float(amount), currency, your_currency)
+                converted = converter.convert(float(amount), currency, your_currency)
             except ValueError:
                 print("Invalid input. Please enter the expense in the correct format.")
             expenses.append((title, amount, currency, converted))
@@ -34,7 +36,7 @@ def main():
         while expense.lower() != "done":
             try:
                 title, amount, currency = expense.split()
-                converted = CurrencyConverter().convert(float(amount), currency, your_currency)
+                converted = converter.convert(float(amount), currency, your_currency)
                 expenses.append((title, amount, currency, converted))
             
             except ValueError:
