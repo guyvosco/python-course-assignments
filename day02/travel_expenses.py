@@ -32,11 +32,11 @@ def main():
         while expense.lower() != "done":
             try:
                 title, amount, currency = expense.split()
-                converted = exchange_rates(amount, currency, your_currency, api_url)
-                expenses.append((title, amount, currency, converted))
-            
             except ValueError:
-                print("Invalid input. Please enter the expense in the correct format.")
+                print("Invalid input. Please enter the expense in the correct format.\n")
+                
+            converted = exchange_rates(rates, amount, currency, your_currency)
+            expenses.append((title, amount, currency, converted))
             expense = input('Add another expense or type "done" to finish.\n')
         
     print_expenses(expenses, your_currency)

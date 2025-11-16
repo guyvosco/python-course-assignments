@@ -36,11 +36,11 @@ def main():
         while expense.lower() != "done":
             try:
                 title, amount, currency = expense.split()
-                converted = converter.convert(float(amount), currency, your_currency)
-                expenses.append((title, amount, currency, converted))
-            
             except ValueError:
-                print("Invalid input. Please enter the expense in the correct format.")
+                print("Invalid input. Please enter the expense in the correct format.\n")
+            
+            converted = converter.convert(float(amount), currency, your_currency)
+            expenses.append((title, amount, currency, converted))
             expense = input('Add another expense or type "done" to finish.\n')
         
     print('+--------------+--------------+--------------+')
